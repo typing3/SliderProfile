@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+<nav class="premium-nav">
+  <div class="brand-logo">AESTHÈTE</div>
+  <div class="nav-links">
+    <button onclick="scrollToSlide(0)" class="nav-dot active" aria-label="Slide 1"></button>
+    <button onclick="scrollToSlide(1)" class="nav-dot" aria-label="Slide 2"></button>
+    <button onclick="scrollToSlide(2)" class="nav-dot" aria-label="Slide 3"></button>
+  </div>
+</nav>
+
+<main class="editorial-slider" id="sliderContainer">
+  <!-- SLIDE 1: INTRO -->
+  <section class="slide slide-1">
+    <div class="slide-content">
+      <span class="eyebrow">Summer / Spring Issue</span>
+      <h1 class="hero-title">The Art of <br><span class="cursive-text">Verdant Spaces</span></h1>
+      <p class="slide-description">Step into a curated world where pristine architecture seamlessly dissolves into the untamed beauty of wild, creeping botanical sanctuaries.</p>
+      <button class="arrow-btn" onclick="scrollToSlide(1)" aria-label="Next Slide">
+        <span>Explore Exhibit</span>
+        <svg class="arrow-icon" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- SLIDE 2: THE STREAM -->
+  <section class="slide slide-2">
+    <div class="slide-content">
+      <span class="eyebrow">Natural Phenomena</span>
+      <h1 class="hero-title">Swaying <br><span class="cursive-text">Streams & Stone</span></h1>
+      <p class="slide-description">Listen closely to the rhythmic trickle of crystalline waters cutting through millennia of polished riverbed quartz, kissed by sunbeams.</p>
+      <button class="arrow-btn" onclick="scrollToSlide(2)" aria-label="Next Slide">
+        <span>Deep Dive</span>
+        <svg class="arrow-icon" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- SLIDE 3: GALLERY OUTRO -->
+  <section class="slide slide-3">
+    <div class="slide-content">
+      <span class="eyebrow">Infinite Horizon</span>
+      <h1 class="hero-title">Under <br><span class="cursive-text">Clear Blue Skies</span></h1>
+      <p class="slide-description">A sensory escape directly beneath a shifting ceiling of soft, drifting clouds, capturing the timeless essence of eternal afternoon breeze.</p>
+      <button class="arrow-btn" onclick="scrollToSlide(0)" aria-label="Return to Start">
+        <span>Return to Start</span>
+        <svg class="arrow-icon reset-arrow" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </section>
+</main>
+  </body>
+</html>
