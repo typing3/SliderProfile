@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -7,54 +7,99 @@
     <title>Pen</title>
   </head>
   <body>
+          <!-- Fully Sticky Premium Dynamic Navigation Panel -->
 <nav class="premium-nav">
-  <div class="brand-logo">AESTHÈTE</div>
+  <div class="brand-logo">ARTISAN</div>
+  
   <div class="nav-links">
-    <button onclick="scrollToSlide(0)" class="nav-dot active" aria-label="Slide 1"></button>
-    <button onclick="scrollToSlide(1)" class="nav-dot" aria-label="Slide 2"></button>
-    <button onclick="scrollToSlide(2)" class="nav-dot" aria-label="Slide 3"></button>
+    <button onclick="jumpToPage(0)" class="nav-dot active" data-index="0"><span>01</span></button>
+    <button onclick="jumpToPage(1)" class="nav-dot" data-index="1"><span>02</span></button>
+    <button onclick="jumpToPage(2)" class="nav-dot" data-index="2"><span>03</span></button>
   </div>
+  
+  <!-- Interactive Header Utility Feature Toggle Menu Button -->
+  <button class="theme-toggle-btn" onclick="toggleThemeSystem()" aria-label="Toggle Atmosphere">
+    <span class="theme-label">Atmosphere</span>
+  </button>
 </nav>
 
+<!-- Main Wide Viewport Slider Window Track Section Component Wrapper Container -->
 <main class="editorial-slider" id="sliderContainer">
-  <!-- SLIDE 1: INTRO -->
+  
+  <!-- PANEL INDEX 01: THE CONCEPT -->
   <section class="slide slide-1">
-    <div class="slide-content">
-      <span class="eyebrow">Summer / Spring Issue</span>
-      <h1 class="hero-title">The Art of <br><span class="cursive-text">Verdant Spaces</span></h1>
-      <p class="slide-description">Step into a curated world where pristine architecture seamlessly dissolves into the untamed beauty of wild, creeping botanical sanctuaries.</p>
-      <button class="arrow-btn" onclick="scrollToSlide(1)" aria-label="Next Slide">
-        <span>Explore Exhibit</span>
-        <svg class="arrow-icon" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
+    <div class="slide-content-grid">
+      <div class="meta-block">
+        <span class="eyebrow-tag">01 / Curated Atmosphere</span>
+        <h2 class="section-title">The Essence of <br><span class="cursive-accent">Verdant Harmony</span></h2>
+        <p class="body-copy">Immerse your senses in a carefully balanced landscape architecture, where structured minimalist stone surfaces blend into creeping botanical elements.</p>
+        
+        <div class="interactive-button-cluster">
+          <button class="action-arrow-btn" onclick="jumpToPage(1)">
+            <span class="btn-text-fill">Next Chapter</span>
+            <svg class="arrow-vector" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- High-End Abstract Structural Card Graphic Element Side -->
+      <div class="visual-accent-card gradient-mesh-1">
+        <div class="card-glass-overlay">
+          <span class="card-number">ISSUE NO. 24</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- SLIDE 2: THE STREAM -->
+  <!-- PANEL INDEX 02: THE STREAM -->
   <section class="slide slide-2">
-    <div class="slide-content">
-      <span class="eyebrow">Natural Phenomena</span>
-      <h1 class="hero-title">Swaying <br><span class="cursive-text">Streams & Stone</span></h1>
-      <p class="slide-description">Listen closely to the rhythmic trickle of crystalline waters cutting through millennia of polished riverbed quartz, kissed by sunbeams.</p>
-      <button class="arrow-btn" onclick="scrollToSlide(2)" aria-label="Next Slide">
-        <span>Deep Dive</span>
-        <svg class="arrow-icon" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
+    <div class="slide-content-grid">
+      <div class="meta-block">
+        <span class="eyebrow-tag">02 / Hydro Mechanics</span>
+        <h2 class="section-title">Polished Quartz <br><span class="cursive-accent">& Shimmering Current</span></h2>
+        <p class="body-copy">A deep study on clear mountain streams cutting through centuries of river stone bed formations, catching the brilliant ray tracks of dawn light paths.</p>
+        
+        <div class="interactive-button-cluster">
+          <button class="action-arrow-btn" onclick="jumpToPage(2)">
+            <span class="btn-text-fill">See Horizon</span>
+            <svg class="arrow-vector" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+      
+      <div class="visual-accent-card gradient-mesh-2">
+        <div class="card-glass-overlay">
+          <span class="card-number">SPRING SHIMMER</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- SLIDE 3: GALLERY OUTRO -->
+  <!-- PANEL INDEX 03: THE HORIZON -->
   <section class="slide slide-3">
-    <div class="slide-content">
-      <span class="eyebrow">Infinite Horizon</span>
-      <h1 class="hero-title">Under <br><span class="cursive-text">Clear Blue Skies</span></h1>
-      <p class="slide-description">A sensory escape directly beneath a shifting ceiling of soft, drifting clouds, capturing the timeless essence of eternal afternoon breeze.</p>
-      <button class="arrow-btn" onclick="scrollToSlide(0)" aria-label="Return to Start">
-        <span>Return to Start</span>
-        <svg class="arrow-icon reset-arrow" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
+    <div class="slide-content-grid">
+      <div class="meta-block">
+        <span class="eyebrow-tag">03 / Infinite Canopy</span>
+        <h2 class="section-title">Open Vault <br><span class="cursive-accent">Beneath Drifting Skies</span></h2>
+        <p class="body-copy">A calm, modern conclusion underneath an ever-shifting horizon canopy layer of pure crisp blue space, bringing fresh summer breeze physics directly onto your desktop canvas.</p>
+        
+        <div class="interactive-button-cluster">
+          <button class="action-arrow-btn return-btn" onclick="jumpToPage(0)">
+            <span class="btn-text-fill">Return to Source</span>
+            <svg class="arrow-vector rotate-left" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+      
+      <div class="visual-accent-card gradient-mesh-3">
+        <div class="card-glass-overlay">
+          <span class="card-number">INFINITE END</span>
+        </div>
+      </div>
     </div>
   </section>
 </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>
